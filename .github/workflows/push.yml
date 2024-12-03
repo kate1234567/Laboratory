@@ -1,10 +1,10 @@
 name: Push image
 
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+  workflow_run:
+    workflows: ["Build image"]
+    types:
+      - completed
 
 jobs:
   deploy:
