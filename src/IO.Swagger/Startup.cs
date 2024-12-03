@@ -99,9 +99,9 @@ namespace IO.Swagger
 
             // Authorization and authentication middleware
             app.UseAuthorization();
-            app.UseMetricServer();
-            app.UseHttpMetrics();
-            app.UseMiddleware<MetricsTracking>();
+            //app.UseMetricServer();
+            //app.UseHttpMetrics();
+            //app.UseMiddleware<MetricsTracking>();
 
             // Swagger middleware to serve Swagger JSON and Swagger UI
             app.UseSwagger();
